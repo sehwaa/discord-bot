@@ -5,7 +5,7 @@ import logging
 client = discord.Client()
 
 #token
-token = 'NjEzNzE5ODk1MzA1MDkzMTY5.XV1B-w.CyK_LqSLkVPe7nh92hUhUQ0RwJk'
+token = 'Your Token'
 
 #봇 구동
 @client.event
@@ -25,12 +25,12 @@ async def on_member_join(member):
 Ex)나이/성별/별명/접속시간대/접률(일주일에접속횟수)등
 2. 닉네임은 저희랑 맞춰서 바꿔주시면 감사하겠습니다!
 3. 공지사항 한번씩 읽어주시는 것을 권장합니다!'''
-    channel = member.server.get_channel('612683932898689025')
+    channel = member.server.get_channel('Your Channel ID')
     await client.send_message(channel, fmt.format(member, member.server))
 
 @client.event
 async def on_member_remove(member):
-    channel = member.server.get_channel('612683932898689025')
+    channel = member.server.get_channel('Your Channel ID')
     fmt = '{0.mention}님이 서버에서 나가셨습니다!'
     await client.send_message(channel, fmt.format(member, member.server))
 
