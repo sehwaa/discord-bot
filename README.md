@@ -20,13 +20,13 @@ discord link : https://discord.gg/NC3nynw
 <h3> 사용법 </h3>
 
 1. 우측 상단에서 파일을 다운로드 받습니다.
-2. 원하는대로 컨텐츠 내용을 바꿔줍니다.
- -1) 인사봇
-    on_ready() - bot이 켜지면 발생하는 이벤트입니다.
-    on_member_join() - 멤버가 서버에 입장했을 때 발생하는 이벤트입니다.
-    on_member_remove() - 멤버가 서버에서 퇴장했을 때 발생하는 이벤트입니다.
- -2) 팀짜기봇
-    on_ready() - bot이 켜지면 발생하는 이벤트입니다.
+2. 원하는대로 컨텐츠 내용을 바꿔줍니다. <br>
+ -1) 인사봇<br>
+    on_ready() - bot이 켜지면 발생하는 이벤트입니다. <br>
+    on_member_join() - 멤버가 서버에 입장했을 때 발생하는 이벤트입니다. <br>
+    on_member_remove() - 멤버가 서버에서 퇴장했을 때 발생하는 이벤트입니다. <br>
+ -2) 팀짜기봇 <br>
+    on_ready() - bot이 켜지면 발생하는 이벤트입니다. <br>
 3. 파일이 저장된 곳으로 이동하여 python glory_greeting_bot.py or python glory_team.py 명령어를 쳐줍니다.(파이썬 설치 필수)
 
 기타 문의 사항은 디스코드 세화#0868로 추가하여 물어보시면 되겠습니다.
