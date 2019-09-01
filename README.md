@@ -35,6 +35,6 @@ discord library version = 0.16.12
     on_member_remove() - 멤버가 서버에서 퇴장했을 때 발생하는 이벤트입니다. <br>
  -2) 팀짜기봇 <br>
     on_ready() - bot이 켜지면 발생하는 이벤트입니다. <br>
-3. 파일이 저장된 곳으로 이동하여 python glory_greeting_bot.py or python glory_team.py 명령어를 쳐줍니다.(파이썬 설치 필수)
+3. 파일이 저장된 곳으로 이동하여 python [파일명] 명령어를 쳐줍니다.(파이썬 설치 필수)
 
 기타 문의 사항은 디스코드 세화#0868로 추가하여 물어보시면 되겠습니다.
