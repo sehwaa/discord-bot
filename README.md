@@ -8,6 +8,10 @@
 들어오실 분들은 들어오시면 환영입니다!! <br>
 discord link : https://discord.gg/NC3nynw
 
+
+discord library version = 0.16.12
+
+
 <h3> 종류 </h3>
 
 1. 인사봇
