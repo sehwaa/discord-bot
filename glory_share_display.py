@@ -22,3 +22,5 @@ async def share(ctx):
     url = 'https://discordapp.com/channels/611294722501378048/'+str(voice_channel_id)
 
     await bot.say('{}'.format(url))
+
+bot.run(token)
