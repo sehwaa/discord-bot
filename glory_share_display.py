@@ -11,7 +11,7 @@ async def on_ready():
     print('logged in as \nname: {}\n  id: {}'.format(bot.user.name, bot.user.id))
     print('='*80)
     
-    await bot.change_presence(game=discord.Game(name='팀짜기', type=1))
+    await bot.change_presence(game=discord.Game(name='화면공유', type=1))
  
 @bot.command(pass_context=True)
 async def share(ctx):
