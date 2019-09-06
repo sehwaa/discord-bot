@@ -2,7 +2,7 @@ from discord.ext import commands
 import discord
 import random
  
-token = 'Your Token'
+token = 'NjEzMDAyMzAxODYyNTc2MTU5.XWaFkA.lmRBXWodHXA0ch6xvZPiwX5bbW0'
 
 bot = commands.Bot(command_prefix='$')
  
@@ -70,4 +70,6 @@ async def team_except(ctx, count, *args):
 
     for index in range(0, len(team)):
         await bot.say('{} team : {}'.format(index+1, team[index]))
+
+
 bot.run(token)
