@@ -70,4 +70,21 @@ async def team_except(ctx, count, *args):
 
     for index in range(0, len(team)):
         await bot.say('{} team : {}'.format(index+1, team[index]))
+
+
+@bot.command(pass_context=True)
+async def choice(ctx, *args):
+    voice_channel = ctx.message.author.voice.voice_channel
+
+    members = voice_channel.voice_members
+
+    member_names = []
+
+    for member in members:
+        member_names.append(member.mention)
+
+    random.shuffle(member_names)
+
+    await bot.say('Hey! {}'.format(member_names[0]))
+
 bot.run(token)
