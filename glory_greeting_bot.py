@@ -1,8 +1,10 @@
 import asyncio
 import discord
+from discord.ext import commands
 import logging
 
 client = discord.Client()
+bot = commands.Bot(command_prefix='$')
 
 #token
 token = 'NjEzNzE5ODk1MzA1MDkzMTY5.XWQAkw.6eLk2vFZrBX4bQnST8mXhR_-u9k'

@@ -18,3 +18,1140 @@ Traceback (most recent call last):
   File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
     data = self._sock.recv(self.max_size)
 ConnectionResetError: [Errno 104] Connection reset by peer
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+logged in as 
+name: 글로리 팀짜기 봇
+  id: 613002301862576159
+================================================================================
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/client.py", line 202, in _request
+    yield from resp.start(conn, read_until_eof)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/client_reqrep.py", line 640, in start
+    message = yield from httpstream.read()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/streams.py", line 641, in read
+    result = yield from super().read()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/streams.py", line 476, in read
+    yield from self._waiter
+aiohttp.errors.ServerDisconnectedError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "glory_team.py", line 90, in <module>
+    bot.run(token)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 519, in run
+    self.loop.run_until_complete(self.start(*args, **kwargs))
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 491, in start
+    yield from self.connect()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 203, in from_client
+    gateway = yield from client.http.get_gateway()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/http.py", line 633, in get_gateway
+    data = yield from self.request(Route('GET', '/gateway'))
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/http.py", line 137, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/client.py", line 209, in _request
+    raise aiohttp.ClientResponseError() from exc
+aiohttp.errors.ClientResponseError
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f490cf65710>
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 430, in poll_event
+    msg = yield from self.recv()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 319, in recv
+    raise ConnectionClosed(self.close_code, self.close_reason)
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1006, no reason.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 448, in connect
+    yield from self.ws.poll_event()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 435, in poll_event
+    raise ResumeWebSocket() from e
+discord.gateway.ResumeWebSocket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 752, in write
+    n = self._sock.send(data)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+logged in as 
+name: 글로리 팀짜기 봇
+  id: 613002301862576159
+================================================================================
+logged in as 
+name: 글로리 팀짜기 봇
+  id: 613002301862576159
+================================================================================
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 430, in poll_event
+    msg = yield from self.recv()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 319, in recv
+    raise ConnectionClosed(self.close_code, self.close_reason)
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1006, no reason.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 448, in connect
+    yield from self.ws.poll_event()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 435, in poll_event
+    raise ResumeWebSocket() from e
+discord.gateway.ResumeWebSocket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "glory_greeting_bot.py", line 39, in <module>
+    client.run(token)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 519, in run
+    self.loop.run_until_complete(self.start(*args, **kwargs))
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 491, in start
+    yield from self.connect()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 207, in from_client
+    timeout=60, loop=client.loop)
+  File "/usr/lib/python3.6/asyncio/tasks.py", line 358, in wait_for
+    return fut.result()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 65, in _ensure_coroutine_connect
+    ws = yield from websockets.connect(gateway, loop=loop, klass=klass)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/py35/client.py", line 19, in __await__
+    return (yield from self.client)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/client.py", line 215, in connect
+    extra_headers=extra_headers)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/client.py", line 125, in handshake
+    raise InvalidStatusCode(status_code)
+websockets.exceptions.InvalidStatusCode: Status code not 101: 520
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f3f86be76d8>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f3f86be79b0>
+logged in as 
+name: 글로리 화면공유봇
+  id: 617750565560254464
+================================================================================
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 430, in poll_event
+    msg = yield from self.recv()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 319, in recv
+    raise ConnectionClosed(self.close_code, self.close_reason)
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1006, no reason.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 448, in connect
+    yield from self.ws.poll_event()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 435, in poll_event
+    raise ResumeWebSocket() from e
+discord.gateway.ResumeWebSocket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "glory_share_display.py", line 26, in <module>
+    bot.run(token)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 519, in run
+    self.loop.run_until_complete(self.start(*args, **kwargs))
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 491, in start
+    yield from self.connect()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 207, in from_client
+    timeout=60, loop=client.loop)
+  File "/usr/lib/python3.6/asyncio/tasks.py", line 358, in wait_for
+    return fut.result()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 65, in _ensure_coroutine_connect
+    ws = yield from websockets.connect(gateway, loop=loop, klass=klass)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/py35/client.py", line 19, in __await__
+    return (yield from self.client)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/client.py", line 215, in connect
+    extra_headers=extra_headers)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/client.py", line 125, in handshake
+    raise InvalidStatusCode(status_code)
+websockets.exceptions.InvalidStatusCode: Status code not 101: 520
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f224f851828>
+logged in as 
+name: 글로리 팀짜기 봇
+  id: 613002301862576159
+================================================================================
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 430, in poll_event
+    msg = yield from self.recv()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 319, in recv
+    raise ConnectionClosed(self.close_code, self.close_reason)
+websockets.exceptions.ConnectionClosed: WebSocket connection is closed: code = 1006, no reason.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 448, in connect
+    yield from self.ws.poll_event()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 435, in poll_event
+    raise ResumeWebSocket() from e
+discord.gateway.ResumeWebSocket
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "glory_team.py", line 90, in <module>
+    bot.run(token)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 519, in run
+    self.loop.run_until_complete(self.start(*args, **kwargs))
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 491, in start
+    yield from self.connect()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 207, in from_client
+    timeout=60, loop=client.loop)
+  File "/usr/lib/python3.6/asyncio/tasks.py", line 358, in wait_for
+    return fut.result()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 65, in _ensure_coroutine_connect
+    ws = yield from websockets.connect(gateway, loop=loop, klass=klass)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/py35/client.py", line 19, in __await__
+    return (yield from self.client)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/client.py", line 215, in connect
+    extra_headers=extra_headers)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/client.py", line 125, in handshake
+    raise InvalidStatusCode(status_code)
+websockets.exceptions.InvalidStatusCode: Status code not 101: 520
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f45afbf7828>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f08fd39ba20>
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+WARNING:discord.gateway:We have stopped responding to the gateway.
+logged in as 
+name: 글로리 팀짜기 봇
+  id: 613002301862576159
+================================================================================
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/client.py", line 198, in _request
+    conn = yield from self._connector.connect(req)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/connector.py", line 304, in connect
+    yield from self._create_connection(req)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/connector.py", line 578, in _create_connection
+    transport, proto = yield from self._create_direct_connection(req)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/connector.py", line 601, in _create_direct_connection
+    local_addr=self._local_addr)
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 781, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 439, in sock_connect
+    return (yield from fut)
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "glory_team.py", line 90, in <module>
+    bot.run(token)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 519, in run
+    self.loop.run_until_complete(self.start(*args, **kwargs))
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 491, in start
+    yield from self.connect()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 203, in from_client
+    gateway = yield from client.http.get_gateway()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/http.py", line 633, in get_gateway
+    data = yield from self.request(Route('GET', '/gateway'))
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/http.py", line 137, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/client.py", line 198, in _request
+    conn = yield from self._connector.connect(req)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/async_timeout/__init__.py", line 45, in __exit__
+    self._do_exit(exc_type)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/async_timeout/__init__.py", line 92, in _do_exit
+    raise asyncio.TimeoutError
+concurrent.futures._base.TimeoutError
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f12fc34b828>
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/client.py", line 198, in _request
+    conn = yield from self._connector.connect(req)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/connector.py", line 304, in connect
+    yield from self._create_connection(req)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/connector.py", line 578, in _create_connection
+    transport, proto = yield from self._create_direct_connection(req)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/connector.py", line 601, in _create_direct_connection
+    local_addr=self._local_addr)
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 781, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 439, in sock_connect
+    return (yield from fut)
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "glory_greeting_bot.py", line 39, in <module>
+    client.run(token)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 519, in run
+    self.loop.run_until_complete(self.start(*args, **kwargs))
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 491, in start
+    yield from self.connect()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 203, in from_client
+    gateway = yield from client.http.get_gateway()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/http.py", line 633, in get_gateway
+    data = yield from self.request(Route('GET', '/gateway'))
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/http.py", line 137, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/client.py", line 198, in _request
+    conn = yield from self._connector.connect(req)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/async_timeout/__init__.py", line 45, in __exit__
+    self._do_exit(exc_type)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/async_timeout/__init__.py", line 92, in _do_exit
+    raise asyncio.TimeoutError
+concurrent.futures._base.TimeoutError
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f428af34748>
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f428af34a20>
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+logged in as 
+name: 글로리 화면공유봇
+  id: 617750565560254464
+================================================================================
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/client.py", line 198, in _request
+    conn = yield from self._connector.connect(req)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/connector.py", line 304, in connect
+    yield from self._create_connection(req)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/connector.py", line 578, in _create_connection
+    transport, proto = yield from self._create_direct_connection(req)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/connector.py", line 601, in _create_direct_connection
+    local_addr=self._local_addr)
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 781, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 439, in sock_connect
+    return (yield from fut)
+concurrent.futures._base.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "glory_share_display.py", line 26, in <module>
+    bot.run(token)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 519, in run
+    self.loop.run_until_complete(self.start(*args, **kwargs))
+  File "/usr/lib/python3.6/asyncio/base_events.py", line 484, in run_until_complete
+    return future.result()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 491, in start
+    yield from self.connect()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/client.py", line 452, in connect
+    self.ws = yield from DiscordWebSocket.from_client(self, resume=resume)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/gateway.py", line 203, in from_client
+    gateway = yield from client.http.get_gateway()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/http.py", line 633, in get_gateway
+    data = yield from self.request(Route('GET', '/gateway'))
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/discord/http.py", line 137, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/aiohttp/client.py", line 198, in _request
+    conn = yield from self._connector.connect(req)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/async_timeout/__init__.py", line 45, in __exit__
+    self._do_exit(exc_type)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/async_timeout/__init__.py", line 92, in _do_exit
+    raise asyncio.TimeoutError
+concurrent.futures._base.TimeoutError
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f965f8c0860>
+logged in as 
+name: 글로리 팀짜기 봇
+  id: 613002301862576159
+================================================================================
+logged in as 
+name: 글로리 팀짜기 봇
+  id: 613002301862576159
+================================================================================
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team_8" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "devide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "choice" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "team_except" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team_8" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "team_except" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "team_except" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "안된다고" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "divide_team" is not found
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+WARNING:discord.gateway:We have stopped responding to the gateway.
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f5190deaa20>
+logged in as 
+name: 글로리 팀짜기 봇
+  id: 613002301862576159
+================================================================================
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "share" is not found
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Task exception was never retrieved
+future: <Task finished coro=<WebSocketCommonProtocol.run() done, defined at /home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py:428> exception=ConnectionResetError(104, 'Connection reset by peer')>
+Traceback (most recent call last):
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 434, in run
+    msg = yield from self.read_message()
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 456, in read_message
+    frame = yield from self.read_data_frame(max_size=self.max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 511, in read_data_frame
+    frame = yield from self.read_frame(max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/protocol.py", line 546, in read_frame
+    self.reader.readexactly, is_masked, max_size=max_size)
+  File "/home/nsh235482/.local/lib/python3.6/site-packages/websockets/framing.py", line 86, in read_frame
+    data = yield from reader(2)
+  File "/usr/lib/python3.6/asyncio/streams.py", line 674, in readexactly
+    yield from self._wait_for_data('readexactly')
+  File "/usr/lib/python3.6/asyncio/streams.py", line 464, in _wait_for_data
+    yield from self._waiter
+  File "/usr/lib/python3.6/asyncio/selector_events.py", line 714, in _read_ready
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
